@@ -26,18 +26,26 @@ body {
   align-items: center;
   font-family: 'OpenSans', sans-serif; }
 
+a {
+  text-decoration: none; }
+
+ul {
+  list-style-type: none; }
+
 .logo {
-  height: 4rem;
+  height: 2.5rem;
   margin-left: 1rem; }
 
 .icon {
-  height: 1.75rem;
-  width: 1.75rem; }
+  height: 1.25rem;
+  width: 1.25rem; }
   .icon--img {
-    height: 2.75rem;
-    width: 2.75rem;
+    height: 2.5rem;
+    width: 2.5rem;
     border-radius: 50%;
     margin-right: 0.5rem; }
+  .icon--img + span {
+    font-size: 0.8rem; }
 
 .search {
   width: 40%;
@@ -45,20 +53,25 @@ body {
   align-items: center;
   justify-content: center; }
   .search__input {
-    color: inherit;
+    color: var(--grey-dark-2);
     font-family: inherit;
     border-radius: 100px;
     height: 2.5rem;
     width: 90%;
     padding: 1rem;
     border: none;
-    margin-right: -3rem;
+    margin-right: -2.5rem;
     transition: all 0.5s; }
+    .search__input::-webkit-input-placeholder {
+      color: var(--grey-dark-2); }
     .search__input:focus {
       outline: none;
       width: 100%; }
-    .search__input::-webkit-input-placeholder {
-      color: var(--grey-dark-2); }
+  .search__input:focus + .search__icon__link > svg {
+    fill: var(--grey-dark-1); }
+  .search__icon__link {
+    background: transparent;
+    border: none; }
   .search__iconbox {
     fill: var(--grey-dark-2); }
 
@@ -80,8 +93,8 @@ body {
       padding: 0.2rem 0.4rem;
       border-radius: 50%;
       position: absolute;
-      top: 0.6rem;
-      right: 0.2rem; }
+      top: 0.7rem;
+      right: 0.3rem; }
 
 .container {
   background-color: var(--grey-light-2);
