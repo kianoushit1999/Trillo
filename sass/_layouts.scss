@@ -1,8 +1,8 @@
 .container{
-    background-color: var(--grey-light-2);
+    background-color: var(--grey-light-1);
     width: 70%;
     min-height: 50rem;
-    margin-top: 5rem;
+    margin: 5rem 0;
     box-shadow: var(--dark-shadow);
 }
 
@@ -12,16 +12,34 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid var(--grey-light-3);
 }
 
 .content{
-
+    display: flex;
 }
 
 .sidebar{
+    flex: 0 0 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    height: 60rem;
+    background: var(--grey-dark-1);
+    color: var(--grey-light-1);
+
+    &__main{
+        padding-top: 2rem;
+    }
+
+    &__footer{
+        text-align: center;
+        padding: 2rem;
+    }
 
 }
 
 .main-content{
-
+    flex: 1;
 }
