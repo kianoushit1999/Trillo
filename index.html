@@ -1,84 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-        
-        <title>trillo &mdash; Your all-in-one booking app</title>
-    </head>
-    <body>
-        <div class="container">
-            <div class="header">
-                <img src="/img/logo.png" alt="" class="logo">
-                <div class="search">
-                    <input type="text" class="search__input" placeholder="Search hotels">
-                    <button href="#" class="search__icon__link">
-                        <svg class="search__iconbox icon search__icon__link__1">
-                            <use xlink:href="/img/sprite.svg#icon-magnifying-glass" class="search__icon"></use>
-                        </svg>
-                    </button>
-                </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-                <div class="user-info">
-                    <div class="user-info__box">
-                        <svg class="icon user-info__box--icon">
-                            <use xlink:href="/img/sprite.svg#icon-chat" class=""></use>
-                        </svg>
-                        <span class="user-info__box--flag">8</span>
-                    </div>
-                    <div class="user-info__box">
-                        <svg class="user-info__box--icone icon">
-                            <use xlink:href="/img/sprite.svg#icon-bookmarks"></use>
-                        </svg>
-                        <span class="user-info__box--flag">5</span>
-                    </div>
-                    <div class="user-info__box">
-                        <img  class="icon--img user-info__box--img" src="/img/user-3.jpg" alt="">
-                        <span>Kianoush</span>
-                    </div>
-                </div>
-            </div>
-            <div class="content">
-                <div class="sidebar">
-                    <div class="sidebar__main">
-                        <ul class="menu">
-                            <li class="menu__item"><a class="menu__item__link" href="#">
-                                <svg>
-                                    <use xlink:href="/img/sprite.svg#icon-home"></use>
-                                </svg> Home
-                            </a></li>
-                            <li class="menu__item"><a class="menu__item__link" href="#">
-                                <svg>
-                                    <use xlink:href="/img/sprite.svg#icon-location"></use>
-                                </svg>Location
-                            </a></li>
-                            <li class="menu__item"><a class="menu__item__link" href="#">
-                                <svg>
-                                    <use xlink:href="/img/sprite.svg#icon-shop"></use>
-                                </svg>Shopping
-                            </a></li>
-                            <li class="menu__item"><a class="menu__item__link" href="#">
-                                <svg>
-                                    <use xlink:href="/img/sprite.svg#icon-globe"></use>
-                                </svg>Branches
-                            </a></li>
-                            <li class="menu__item"><a class="menu__item__link" href="#">
-                                <svg>
-                                    <use xlink:href="/img/sprite.svg#icon-user"></use>
-                                </svg>Panel
-                            </a></li>
-                        </ul>
-                    </div>
-                    <div class="sidebar__footer">
-                        &copy; belong to KNA, All right reserved
-                    </div>
-                </div>
-                <main class="main-content">adfsdaf</main>
-            </div>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title>trillo &mdash; Your all-in-one booking app</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="/img/logo.png" alt="" class="logo" />
+        <div class="search">
+          <input
+            type="text"
+            class="search__input"
+            placeholder="Search hotels"
+          />
+          <button href="#" class="search__icon__link">
+            <svg class="search__iconbox icon search__icon__link__1">
+              <use
+                xlink:href="/img/sprite.svg#icon-magnifying-glass"
+                class="search__icon"
+              ></use>
+            </svg>
+          </button>
         </div>
-    </body>
+
+        <div class="user-info">
+          <div class="user-info__box">
+            <svg class="icon user-info__box--icon">
+              <use xlink:href="/img/sprite.svg#icon-chat" class=""></use>
+            </svg>
+            <span class="user-info__box--flag">8</span>
+          </div>
+          <div class="user-info__box">
+            <svg class="user-info__box--icone icon">
+              <use xlink:href="/img/sprite.svg#icon-bookmarks"></use>
+            </svg>
+            <span class="user-info__box--flag">5</span>
+          </div>
+          <div class="user-info__box">
+            <img
+              class="icon--img user-info__box--img"
+              src="/img/user-3.jpg"
+              alt=""
+            />
+            <span>Kianoush</span>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="sidebar">
+          <div class="sidebar__main">
+            <ul class="menu">
+              <li class="menu__item">
+                <a class="menu__item__link" href="#">
+                  <svg>
+                    <use xlink:href="/img/sprite.svg#icon-home"></use>
+                  </svg>
+                  Home
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__item__link" href="#">
+                  <svg>
+                    <use xlink:href="/img/sprite.svg#icon-map"></use></svg
+                  >Location
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__item__link" href="#">
+                  <svg>
+                    <use xlink:href="/img/sprite.svg#icon-shop"></use></svg
+                  >Shopping
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__item__link" href="#">
+                  <svg>
+                    <use xlink:href="/img/sprite.svg#icon-globe"></use></svg
+                  >Branches
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__item__link" href="#">
+                  <svg>
+                    <use xlink:href="/img/sprite.svg#icon-user"></use></svg
+                  >Panel
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="sidebar__footer">
+            &copy; belong to KNA, All right reserved
+          </div>
+        </div>
+        <main class="main-content">
+          <figure class="main-content__pictures">
+            <img src="/img/hotel-1.jpg" alt="" />
+            <img src="/img/hotel-2.jpg" alt="" />
+            <img src="/img/hotel-3.jpg" alt="" />
+          </figure>
+          <header class="main-content__header">
+            <div class="header-box">
+              <h4 class="header-box--h">Hotel las palams</h4>
+              <div class="header-box--score">
+                <svg>
+                  <use xlink:href="/img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg>
+                  <use xlink:href="/img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg>
+                  <use xlink:href="/img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg>
+                  <use xlink:href="/img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg>
+                  <use xlink:href="/img/sprite.svg#icon-star"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="header-box">
+              <div class="header-box--location">
+                <svg>
+                  <use xlink:href="/img/sprite.svg#icon-location"></use>
+                </svg>
+                <a href="#" class="header-box--location--text">
+                  Isfahan, Iran
+                </a>
+              </div>
+              <div class="header-box--votes">
+                <h4>9.5</h4>
+                <p>425 votes</p>
+              </div>
+            </div>
+          </header>
+          <div class="detail">
+            <div class="info">
+              <div class="info__paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+                nisi dignissimos debitis ratione sapiente saepe. Accusantium
+                cumque, quas, ut corporis incidunt deserunt quae architecto
+                voluptate.
+              </div>
+              <div class="info__paragraph">
+                Accusantium cumque, quas, ut corporis incidunt deserunt quae
+                architecto voluptate delectus, inventore iure aliquid aliquam.
+              </div>
+              <ul class="info__list">
+                <li class="info__list__item">Close to the beach</li>
+                <li class="info__list__item">Breakfast included</li>
+                <li class="info__list__item">Free airdrop shuttle</li>
+                <li class="info__list__item">Free wifi in all rooms</li>
+                <li class="info__list__item">Air condition and heating</li>
+                <li class="info__list__item">Pets allowed</li>
+                <li class="info__list__item">We speak all languages</li>
+                <li class="info__list__item">Perfect for families</li>
+              </ul>
+              <div class="info__recommendation">
+                <p class="info__recommendation--text">
+                  Kianoush and 3 other friends recommand this hotel
+                </p>
+                <figure class="info__recommendation--img">
+                  <img src="/img/user-1.jpg" alt="" />
+                  <img src="/img/user-2.jpg" alt="" />
+                  <img src="/img/user-3.jpg" alt="" />
+                  <img src="/img/user-4.jpg" alt="" />
+                </figure>
+              </div>
+            </div>
+            <div class="reviews">
+              <div class="reviews__box">
+                <div class="reviews__box--paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+                  doloremque architecto dicta animi, totam, itaque officia ex.
+                </div>
+                <div class="reviews__box__footer">
+                    <figure class="reviews__box__footer">
+                        <img src="/img/user-5.jpg" alt="" class="reviews__box__footer--img">
+                        <figcaption>
+                            <p>Kianoush Nasr</p>
+                            <small>Dec 12rd, 2020</small>
+                        </figcaption>
+                    </figure>
+                    <div class="score">9.7</div>
+                </div>
+              </div>
+              <div class="reviews__box">
+                <div class="reviews__box--paragraph">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+                  doloremque architecto dicta animi, totam, itaque officia ex.
+                </div>
+                <div class="reviews__box__footer">
+                    <figure class="reviews__box__footer">
+                        <img src="/img/user-6.jpg" alt="" class="reviews__box__footer--img">
+                        <figcaption>
+                            <p>Mehrnoush Nasr</p>
+                            <small>Oct 12rd, 2021</small>
+                        </figcaption>
+                    </figure>
+                    <div class="score">8.5</div>
+                </div>
+              </div>
+
+              <button href="#" class="btn">
+                <span>See More</span><span>&rarr;</span>
+              </button>
+            </div>
+          </div>
+          
+        </main>
+      </div>
+    </div>
+  </body>
 </html>

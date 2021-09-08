@@ -16,6 +16,9 @@
   --grey-dark-3: #999;
 
   --dark-shadow: 0 0.5rem 2rem var(--grey-dark-3);
+  --light-shadow: 0 0.25rem 0.5rem var(--grey-light-4);
+
+  --border-bottom: 1px solid var(--grey-light-3);
 }
 
 *{
@@ -36,6 +39,7 @@ body{
 
 a{
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 ul{
