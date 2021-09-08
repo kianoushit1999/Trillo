@@ -1,9 +1,14 @@
 .container{
     background-color: var(--grey-light-1);
-    width: 70%;
+    width: 80%;
     min-height: 50rem;
     margin: 5rem 0;
     box-shadow: var(--dark-shadow);
+
+    @media only screen and (max-width:$max-size) {
+        width: 100%;
+        margin: 0;
+    }
 }
 
 .header{
@@ -13,10 +18,17 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid var(--grey-light-3);
+    @media only screen and (max-width: $small-size) {
+        flex-wrap: wrap;
+        padding-bottom: 6rem;
+    }
 }
 
 .content{
     display: flex;
+    @media only screen and (max-width:$medium-size) {
+        flex-direction: column;
+    }
 }
 
 .sidebar{
@@ -24,17 +36,27 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 40rem;
     background: var(--grey-dark-1);
     color: var(--grey-light-1);
 
+    @media only screen and (max-width:$medium-size) {
+        display: block;        
+    }
+
     &__main{
         padding-top: 2rem;
+        @media only screen and (max-width:$medium-size) {
+            padding-top: 0;        
+        }
     }
 
     &__footer{
         text-align: center;
         padding: 2rem;
+
+        @media only screen and (max-width:$medium-size) {
+            display: none;
+        }
     }
 
 }

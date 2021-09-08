@@ -1,4 +1,3 @@
-
 :root {
   --primary: #eb2f64;
   --primary-light: #ff3366;
@@ -10,7 +9,6 @@
   --grey-light-4: #ccc;
   --grey-light-5: rgb(228, 226, 226);
 
-
   --grey-dark-1: #333;
   --grey-dark-2: #777;
   --grey-dark-3: #999;
@@ -21,29 +19,42 @@
   --border-bottom: 1px solid var(--grey-light-3);
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+$max-size: 1400px;
+$max-medium-size: 1200px;
+$medium-size: 900px;
+$small-medium-size: 700px;
+$small-size: 550px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    min-height: 100vh;
-    width: 100%;
-    background: radial-gradient(var(--primary-light) 0%, var(--primary) 70%, var(--primary-dark) 100%) no-repeat center center/cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'OpenSans', sans-serif;
+body {
+  min-height: 100vh;
+  width: 100%;
+  background: radial-gradient(
+      var(--primary-light) 0%,
+      var(--primary) 70%,
+      var(--primary-dark) 100%
+    )
+    no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "OpenSans", sans-serif;
+
+  @media only screen and (max-width: $max-medium-size) {
+    font-size: 75%;
+  }
 }
 
-a{
+a {
   text-decoration: none;
   text-transform: uppercase;
 }
 
-ul{
+ul {
   list-style-type: none;
 }
-
-
