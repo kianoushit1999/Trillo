@@ -336,6 +336,7 @@
     display: inline-block;
     padding-left: 0.5rem;
     border-bottom: 2px solid var(--primary-dark);
+    transition: all 0.2s;
   }
   margin: 0 auto;
   display: flex;
@@ -345,8 +346,14 @@
   font-size: 0.9rem;
   background: transparent;
   border: none;
+
   &:focus{
     outline: none;
+
+    span:last-child{
+      padding-left: 0.8rem;
+    }
+
     animation: big-small 0.8s infinite cubic-bezier(1, 1, 0, 1);
   }
 }
