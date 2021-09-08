@@ -204,14 +204,14 @@
   }
 }
 
-.detail{
+.detail {
   display: flex;
   padding: 2rem 4rem;
   background-color: var(--grey-light-2);
   color: var(--grey-dark-2);
 }
 
-.info{
+.info {
   background-color: var(--grey-light-1);
   font-size: 1rem;
   flex: 0 0 60%;
@@ -219,22 +219,22 @@
   padding: 2rem 1.5rem;
   box-shadow: var(--light-shadow);
 
-  &__paragraph{
+  &__paragraph {
     padding-bottom: 1.5rem;
   }
 
-  &__list{
+  &__list {
     display: flex;
     flex-wrap: wrap;
     border-top: var(--border-bottom);
     border-bottom: var(--border-bottom);
     padding: 2rem 0;
 
-    &__item{
+    &__item {
       flex: 0 0 50%;
       padding: 0.5rem 0;
 
-      &::before{
+      &::before {
         content: "";
         display: inline-block;
         height: 0.8rem;
@@ -247,29 +247,29 @@
     }
   }
 
-  &__recommendation{
+  &__recommendation {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 2rem;
 
-    &--text{
+    &--text {
       font-size: 0.9rem;
       color: var(--grey-dark-3);
     }
 
-    &--img{
-      img{
+    &--img {
+      img {
         box-sizing: content-box;
         border-radius: 50%;
         height: 2.5rem;
         width: 2.5rem;
         border: 3px solid var(--grey-light-1);
-        &:not(:last-child){
+        &:not(:last-child) {
           margin-right: -1.2rem;
         }
         transition: transform 0.8s;
-        &:hover{
+        &:hover {
           transform: scale(1.8);
         }
       }
@@ -277,10 +277,10 @@
   }
 }
 
-.reviews{
+.reviews {
   flex: 1;
 
-  &__box{
+  &__box {
     background: var(--grey-light-1);
     padding: 2rem;
     font-size: 1rem;
@@ -288,35 +288,35 @@
     box-shadow: var(--light-shadow);
     position: relative;
 
-    &--paragraph{
+    &--paragraph {
       position: relative;
       z-index: 1;
     }
 
-    &__footer{
+    &__footer {
       display: flex;
       justify-content: space-between;
       align-items: center;
       font-size: 0.9rem;
       padding-top: 1rem;
 
-      &--img{
+      &--img {
         height: 3rem;
         width: 3rem;
         border-radius: 50%;
         margin-right: 0.7rem;
         transition: transform 0.8s;
 
-        &:hover{
+        &:hover {
           transform: scale(1.4);
         }
       }
     }
 
-    &::before{
+    &::before {
       content: "“";
       display: inline-block;
-      position:absolute;
+      position: absolute;
       top: -1.5rem;
       left: 0rem;
       font-size: 10rem;
@@ -325,14 +325,13 @@
   }
 }
 
-.score{
+.score {
   color: var(--primary-dark);
   font-size: 1.2rem;
 }
 
-.btn{
-
-  span{
+.btn-light {
+  span {
     display: inline-block;
     padding-left: 0.5rem;
     border-bottom: 2px solid var(--primary-dark);
@@ -347,15 +346,72 @@
   background: transparent;
   border: none;
 
-  &:focus{
+  &:focus {
     outline: none;
 
-    span:last-child{
+    span:last-child {
       padding-left: 0.8rem;
     }
 
     animation: big-small 0.8s infinite cubic-bezier(1, 1, 0, 1);
   }
+}
+
+.footer {
+  color: var(--grey-dark-2);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-primary {
+  margin: 2rem;
+  padding: 1.25rem 4rem;
+  border-radius: 100px;
+  border: none;
+  position: relative;
+  background: linear-gradient(
+    to right,
+    var(--primary-light),
+    var(--primary-dark)
+  );
+  color: var(--grey-light-1);
+
+  &::after{
+    content: "Only 4 room remain";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: 0;
+    transition: all 0.8s;
+  }
+
+  div {
+    transition: all 0.8s;
+  }
+
+  &:hover {
+    div{
+      transform: translateY(200%);
+      opacity: 0;
+      visibility: 0;
+    }
+    background: linear-gradient(
+    to left,
+    var(--primary-light),
+    var(--primary-dark));
+  }
+
+  &:hover::after{
+    opacity: 1;
+    visibility: 1;
+    transform: translateX(-50%) translateY(50%);
+  }
+
 }
 
 @keyframes big-small {

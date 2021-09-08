@@ -276,7 +276,7 @@ ul {
   color: var(--primary-dark);
   font-size: 1.2rem; }
 
-.btn {
+.btn-light {
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -285,16 +285,54 @@ ul {
   font-size: 0.9rem;
   background: transparent;
   border: none; }
-  .btn span {
+  .btn-light span {
     display: inline-block;
     padding-left: 0.5rem;
     border-bottom: 2px solid var(--primary-dark);
     transition: all 0.2s; }
-  .btn:focus {
+  .btn-light:focus {
     outline: none;
     animation: big-small 0.8s infinite cubic-bezier(1, 1, 0, 1); }
-    .btn:focus span:last-child {
+    .btn-light:focus span:last-child {
       padding-left: 0.8rem; }
+
+.footer {
+  color: var(--grey-dark-2);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.btn-primary {
+  margin: 2rem;
+  padding: 1.25rem 4rem;
+  border-radius: 100px;
+  border: none;
+  position: relative;
+  background: linear-gradient(to right, var(--primary-light), var(--primary-dark));
+  color: var(--grey-light-1); }
+  .btn-primary::after {
+    content: "Only 4 room remain";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: 0;
+    transition: all 0.8s; }
+  .btn-primary div {
+    transition: all 0.8s; }
+  .btn-primary:hover {
+    background: linear-gradient(to left, var(--primary-light), var(--primary-dark)); }
+    .btn-primary:hover div {
+      transform: translateY(200%);
+      opacity: 0;
+      visibility: 0; }
+  .btn-primary:hover::after {
+    opacity: 1;
+    visibility: 1;
+    transform: translateX(-50%) translateY(50%); }
 
 @keyframes big-small {
   0% {
